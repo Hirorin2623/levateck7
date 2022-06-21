@@ -1,5 +1,7 @@
 <?php
 
+use Illuminote\Support\Facades\Routes;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'PostController@index');
